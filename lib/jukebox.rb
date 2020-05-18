@@ -68,9 +68,9 @@ def run
   when "help"
     help
   when "list"
-    list
+    list(songs)
   when "play"
-    play
+    play(songs)
   when "exit"
     return exit_jukebox
  end 
