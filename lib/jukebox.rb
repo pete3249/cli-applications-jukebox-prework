@@ -68,12 +68,16 @@ def run
  while count > 0 do
    if user_command == "help"
     help
+   end 
    if user_command ==  "list"
     list(songs)
+   end 
    if user_command == "play"
     play(songs)
+   end
    if user_command == "exit"
     exit_jukebox
     break
+   end 
  end 
 end
