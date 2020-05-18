@@ -64,17 +64,16 @@ def run
  puts "Please enter a command:"
  user_command = gets.strip
  count = 1
- exit_statement = "exit"
- 
- while user_command > 0 do 
+
+ while count > 0 do
    if user_command == "help"
     help
-  when "list"
+   if user_command ==  "list"
     list(songs)
-  when "play"
+   if user_command == "play"
     play(songs)
-  when "exit"
+   if user_command == "exit"
     exit_jukebox
-  end 
-  
+    break
+ end 
 end
