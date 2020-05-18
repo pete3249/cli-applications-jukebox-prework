@@ -50,7 +50,6 @@ def play(songs)
       end
     end
   elsif user_response.to_i >= 1 user_response.to_i <= songs.length
-  binding.pry
       puts "Playing #{songs[user_response.to_i - 1]}"
   else 
       puts "Invalid input, please try again"
