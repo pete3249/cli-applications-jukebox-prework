@@ -62,10 +62,12 @@ end
 
 def run
  puts "Please enter a command:"
-binding.pry
  user_command = gets.strip
- case user_command
-  when "help"
+ count = 1
+ exit_statement = "exit"
+ 
+ while user_command > 0 do 
+   if user_command == "help"
     help
   when "list"
     list(songs)
