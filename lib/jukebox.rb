@@ -49,7 +49,7 @@ def play(songs)
         puts "Playing #{song_name}"
       end
     end
-  elsif user_response.to_i >= 1 user_response.to_i <= songs.length
+  elsif user_response.to_i >= 1 && user_response.to_i <= songs.length
       puts "Playing #{songs[user_response.to_i - 1]}"
   else 
       puts "Invalid input, please try again"
