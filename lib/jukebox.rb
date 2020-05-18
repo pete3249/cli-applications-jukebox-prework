@@ -63,7 +63,7 @@ end
 def run
  puts "Please enter a command:"
  user_command = gets.strip
- 
+binding.pry
  case user_command
   when "help"
     help
